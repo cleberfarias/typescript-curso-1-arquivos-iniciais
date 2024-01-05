@@ -4,10 +4,10 @@ export class Negociacoes {
     private negociacoes: Negociacao[] = [];
 
 
-    acidiona(negociacao: Negociacao) {
+    public acidiona(negociacao: Negociacao) {
         this.negociacoes.push(negociacao);
     }
-    lista(): readonly Negociacao[]{
+    public lista(): readonly Negociacao[]{
         return [...this.negociacoes];
 
     }
